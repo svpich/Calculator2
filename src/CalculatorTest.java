@@ -13,7 +13,7 @@ public class CalculatorTest {
             String arithmeticExpression = scanner.nextLine();
 
             if (arithmeticExpression.equals("exit")) {
-                System.out.println("Вы вышли из калькулятора");
+                System.out.println("Вы вышли из калькулятора.");
                 return;
             }
 
