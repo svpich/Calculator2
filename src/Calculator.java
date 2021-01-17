@@ -30,7 +30,7 @@ public class Calculator {
         boolean isLeftPart = true;
 
         if (line.equals("exit")) {
-            return "exit";
+            return line;
         }
 
         for (int i = 0; i < line.length(); ++i) {
