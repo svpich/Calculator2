@@ -29,6 +29,10 @@ public class Calculator {
         char operator = '+';
         boolean isLeftPart = true;
 
+        if (line.equals("exit")) {
+            return "exit";
+        }
+
         for (int i = 0; i < line.length(); ++i) {
             if (Character.toString(line.charAt(i)).equals("+") || Character.toString(line.charAt(i)).equals("-") || Character.toString(line.charAt(i)).equals("*") || Character.toString(line.charAt(i)).equals("/")) {
                 operator = line.charAt(i);
