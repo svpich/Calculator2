@@ -24,14 +24,14 @@ public class Calculator {
             "91", "92", "93", "94", "95", "96", "97", "98", "99", "100"};
 
     public static String calculate(String line) throws DataException {
+        if (line.equals("exit")) {
+            return line;
+        }
+        
         StringBuilder startNumber1 = new StringBuilder();
         StringBuilder startNumber2 = new StringBuilder();
         char operator = '+';
         boolean isLeftPart = true;
-
-        if (line.equals("exit")) {
-            return line;
-        }
 
         for (int i = 0; i < line.length(); ++i) {
             if (Character.toString(line.charAt(i)).equals("+") || Character.toString(line.charAt(i)).equals("-") || Character.toString(line.charAt(i)).equals("*") || Character.toString(line.charAt(i)).equals("/")) {
@@ -86,7 +86,6 @@ public class Calculator {
     }
 
     private static String defineNumberType(String number1, String number2) {    // Определение римские или арабские, и что оба числа одного типа
-
         String numberType = errorMessage;
 
         for (String i : Calculator.arrayRomeNumbers) {
