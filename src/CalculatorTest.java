@@ -7,7 +7,6 @@ public class CalculatorTest {
         System.out.println("Калькулятор выполняет сложение(+), вычитание(-), деление(/), умножение(*) арабских или римских чисел от 1 до 10.");
         System.out.println("Для выхода из калькулятора введите \"exit\".");
 
-
         while (true) {
             System.out.print("Вычислить: ");
             String arithmeticExpression = scanner.nextLine();
